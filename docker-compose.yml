@@ -1,0 +1,11 @@
+ version: '3'
+ services:
+   database:
+     container_name: postgres-csc2022
+     image: postgres:latest
+     ports:
+       - "5433:5432"
+     volumes:
+       - C:\Users\Obisanya Oluwatosin\Documents\Second Year\Second Semester\COS 202\CSC202-2022set:/data/postgres
+     env_file:
+       - csc2022.env
